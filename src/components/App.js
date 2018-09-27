@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { setUsers } from '../actions';
 
+
 export class App extends Component {
 	componentDidMount() {
 		if (this.props.users.length === 0) {
@@ -15,13 +16,13 @@ export class App extends Component {
 		return (
 			<div>
 				<h2>User List</h2>
-				{
+				<ul>{
 					this.props.users.map(user => {
 						return (
-							<div key={user.id}>{user.name}</div>
+							<li key={user.id}>{user.name}</li>
 						);
 					})
-				}
+				}</ul>
 			</div>
 		);
 	}

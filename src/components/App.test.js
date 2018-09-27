@@ -11,4 +11,8 @@ describe('App', () => {
 	it('renders the title', () => {
 		expect(app.find('h2').text()).toEqual('User List');
 	});
+
+	it('creates the correct number of users', () => {
+		expect(app.find('li').length).toEqual(users.length);
+	});
 });
