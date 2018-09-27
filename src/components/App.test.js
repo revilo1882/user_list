@@ -6,6 +6,7 @@ import { users } from '../data/fixtures';
 const props = { users };
 
 describe('App', () => {
+
 	const app = shallow(<App {...props} />);
 
 	it('renders the title', () => {
