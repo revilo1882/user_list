@@ -1,3 +1,4 @@
+import { combineReducers } from 'redux';
 import { SET_USERS } from '../actions';
 
 function users(state = [], action) {
@@ -9,4 +10,4 @@ function users(state = [], action) {
 	}
 }
 
-export default users;
+export default combineReducers({ users });
