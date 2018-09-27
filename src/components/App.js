@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { setUsers } from '../actions';
 
-class App extends Component {
+export class App extends Component {
 	componentDidMount() {
 		if (this.props.users.length === 0) {
 			fetch('https://jsonplaceholder.typicode.com/users')
