@@ -15,4 +15,10 @@ describe('App', () => {
 	it('creates the correct number of users', () => {
 		expect(app.find('li').length).toEqual(users.length);
 	});
+
+	it('names the list item correctly', () => {
+		app.find('li').forEach((listName, index) => {
+			expect(listName.text()).toEqual(users[index].name);
+		});
+	});
 });
