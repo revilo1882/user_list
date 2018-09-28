@@ -33,4 +33,4 @@ I used the create-react-app to package to build a project and added the redux an
 
 ## Further Work
 
-With a bit more time and in order to understand the flow of data in Redux a bit better I would like to change each item in the list to a link which would then display more information about the user selected.
+With a bit more time and in order to understand the flow of data in Redux a bit better I would like to change each item in the list to a link which would then display more information about the selected user.
