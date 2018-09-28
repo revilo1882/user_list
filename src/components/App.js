@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { setUsers } from '../actions';
 
-
 export class App extends Component {
 	componentDidMount() {
 		if (this.props.users.length === 0) {
